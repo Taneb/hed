@@ -17,7 +17,11 @@ cabal-version:       >=1.10
 
 executable hed
   main-is:             Main.hs
-  -- other-modules:       
+  other-modules:       Hed.hs
+                     , Hed/Address.hs
+                     , Hed/Address/Literal.hs
+                     , Hed/Command.hs
+                     , Hed/Command/Print.hs
   -- other-extensions:    
   build-depends:       base >=4.9 && <4.10
                      , megaparsec
